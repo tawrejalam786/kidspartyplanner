@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # XAMPP/subfolder convenience: open the app when visiting
+    # /kids-party-planner/public without explicitly typing index.php.
+    RewriteRule ^public/?$ public/index.php [L]
+
+    # If the project root is exposed by a shared host, still serve Laravel from
+    # the public front controller.
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^$ public/index.php [L]
+</IfModule>

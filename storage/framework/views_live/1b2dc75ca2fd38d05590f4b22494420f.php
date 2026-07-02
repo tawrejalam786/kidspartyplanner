@@ -1,0 +1,2 @@
+<?php echo $__env->make('admin.resources.form_v2', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+<?php /**PATH C:\xampp\htdocs\kids-party-planner\resources\views\admin\resources\form.blade.php ENDPATH**/ ?>
